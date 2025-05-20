@@ -10,11 +10,9 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Hello World!");
         OkHttpClient client = new OkHttpClient();
-        String url = "https://example.com/";
+        String url = "https://www.codehelp.in/";
 
-        Request request = new Request.Builder()
-                .url(url)
-                .build();
+        Request request = new Request.Builder().url(url).build();
 
         try (Response response = client.newCall(request).execute()) {
             if (!response.isSuccessful()) {
